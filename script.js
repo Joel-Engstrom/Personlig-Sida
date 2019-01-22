@@ -1,7 +1,7 @@
 $(document).ready(function() {
     
     //Skapa ScrollMagic
-    var controller = new ScrollMagic.controller();
+    //var controller = new ScrollMagic.controller();
     
     //Texten i mitten.
     $("#titleText").slideDown(1200);
