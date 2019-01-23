@@ -38,14 +38,14 @@ body, html{
     padding: 30px;
 }
 .NavUl a{
-    color: white;
+    color: wheat;
     text-decoration: none;
     text-shadow: -2px 2px 4px black;
 }
-.NavUl li :hover{
+/*.NavUl li :hover{
     text-decoration: underline;
     color: wheat;
-}
+}*/
 .MainPic{
     width: 100vw;
     height: 100vh;
@@ -59,7 +59,7 @@ body, html{
     filter: blur(0px);
 }
 .textContainer{
-    width: 30vw;
+    width: 35vw;
     height: 5vh;
     
     text-align: center;
@@ -70,12 +70,29 @@ body, html{
     transform: translate(-50%, -50%);
 }
 #titleText{
-    font-size: 70px;
+    font-size: 4vw;
     letter-spacing: 10px;
-    text-shadow: -2px 2px 2px black;
+    text-shadow: -3px 3px 4px black;
     display: none;
 }
 #descText{
-    font-size: 25px;
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-shadow: -1px 1px 2px black;
+    overflow: hidden;
     display: none;
+}
+@media screen and (max-width: 700px) {
+  #titleText {
+    font-size: 8vw;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+  }
+  #descText{
+      font-size: 4vw;
+      width: 100%;
+      flex-wrap: wrap;
+      overflow-wrap: break-word;
+  }
 }
