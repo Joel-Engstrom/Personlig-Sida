@@ -8,9 +8,12 @@ $(document).ready(function () {
     $("#navItem1").hide();
     $("#navItem2").hide();
     $("#navItem3").hide();
+    $("#navItem4").hide();
+    $("#navItem4").delay(500).fadeIn(1000);
     $("#navItem1").delay(2000).fadeIn(1000);
     $("#navItem2").delay(2500).fadeIn(1000);
     $("#navItem3").delay(3000).fadeIn(1000);
+    
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0)
