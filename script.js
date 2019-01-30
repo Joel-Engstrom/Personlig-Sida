@@ -1,3 +1,5 @@
+var animRunning = false;
+
 $(document).ready(function() {
     
 
@@ -17,12 +19,11 @@ $(document).ready(function() {
     $("#navItem3").delay(3000).fadeIn(1000);
 
     //Animera färgen på nav namnen.
-    $("[id*='navItem']").hover(function () {
+    $("Header").hover(function () {
             //in
-            console.log("Hej");
             $("#navItem1 a").animate({"color":"#0000cc"}, 500);
-            $("#navItem2 a").animate({"color":"#3366ff"}, 500);
-            $("#navItem3 a").animate({"color":"#3377ff"}, 500);
+            $("#navItem2 a").animate({"color":"#0000cc"}, 500);
+            $("#navItem3 a").animate({"color":"#0000cc"}, 500);
         }, function () {
             //out
             $("#navItem1 a").animate({"color":"wheat"}, 500);
