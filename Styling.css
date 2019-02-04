@@ -27,8 +27,10 @@ body, html{
 .NavUl{
     list-style-type: none;
     overflow: hidden;
+    
     margin: 0px;
     padding: 0px;
+
     text-align: right;
     line-height: 80px;
 }
