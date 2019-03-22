@@ -9,19 +9,24 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!--jQuery Color plugin-->
         <script src="https://code.jquery.com/color/jquery.color-2.1.2.js" integrity="sha256-1Cn7TdfHiMcEbTuku97ZRSGt2b3SvZftEIn68UMgHC8=" crossorigin="anonymous"></script>
-        <!--ScrollMagic-->
-        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
         <!--Min Script fil-->
         <script src="script.js"></script>
     </head>
+
+    <?php
+    require_once "config.php";
     
+    if (!$conn->connect_error) {
+        echo "Connect OK!";
+    }
+    ?>
+
     <body>
         <div class="FlexBox-Container">
             <header class="Header">
                 <nav class="NavList">
                     <ul class="NavUl">
-                        <li id="navItem3"><a href="./index.html"> Hem</a></li>
+                        <li id="navItem3"><a href="./index.php"> Hem</a></li>
                         <li id="navItem2"><a href="./about.html"> Om mig</a></li>
                         <li id="navItem1"><a href="./work.html"> Mina meriter</a></li>
                     </ul>

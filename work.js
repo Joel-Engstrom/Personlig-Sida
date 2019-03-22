@@ -20,10 +20,12 @@ $(document).ready(function () {
         {
             $(".Header").addClass("AfterScroll");
             $(".NavUl").addClass("AfterScroll");
+            $("#Icon").addClass("AfterScroll");
         } else 
         {
             $(".Header").removeClass("AfterScroll");
             $(".NavUl").removeClass("AfterScroll");
+            $("#Icon").removeClass("AfterScroll");
         }
     })
 });

@@ -1,10 +1,5 @@
-var animRunning = false;
-
 $(document).ready(function() {
     
-
-
-
     //Texten i mitten.
     $("#titleText").slideDown(1200);
     $("#descText").delay(1200);
@@ -19,16 +14,28 @@ $(document).ready(function() {
     $("#navItem3").delay(3000).fadeIn(1000);
 
     //Animera färgen på nav namnen.
-    $("Header").hover(function () {
+    $("#navItem1 a").hover(function () {
             //in
-            $("#navItem1 a").animate({"color":"#0000cc"}, 500);
-            $("#navItem2 a").animate({"color":"#0000cc"}, 500);
-            $("#navItem3 a").animate({"color":"#0000cc"}, 500);
+            $("#navItem1 a").animate({color:"#0000cc"}, 500);
         }, function () {
             //out
-            $("#navItem1 a").animate({"color":"wheat"}, 500);
-            $("#navItem2 a").animate({"color":"wheat"}, 500);
-            $("#navItem3 a").animate({"color":"wheat"}, 500);
+            $("#navItem1 a").animate({color:"#F5DEB3"}, 500);
+        }
+    );
+    $("#navItem2 a").hover(function () {
+            //in
+            $("#navItem2 a").animate({color:"#0000cc"}, 500);
+        }, function () {
+            //out
+            $("#navItem2 a").animate({color:"#F5DEB3"}, 500);
+        }
+    );
+    $("#navItem3 a").hover(function () {
+            //in
+            $("#navItem3 a").animate({color:"#0000cc"}, 500);
+        }, function () {
+            //out
+            $("#navItem3 a").animate({color: "#F5DEB3"}, 500);
         }
     );
 });
