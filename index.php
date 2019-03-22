@@ -15,10 +15,6 @@
 
     <?php
     require_once "config.php";
-    
-    if (!$conn->connect_error) {
-        echo "Connect OK!";
-    }
     ?>
 
     <body>
